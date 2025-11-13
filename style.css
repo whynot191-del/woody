@@ -1,0 +1,128 @@
+/* 기본 스타일 초기화 및 폰트 설정 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #ff6347; /* 토마토 색상 */
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 메인 콘텐츠 영역 */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+/* 상품 그리드 레이아웃 */
+.product-grid {
+    display: grid;
+    /* 화면 크기에 따라 자동으로 250px 이상의 카드를
+      유연하게 채워넣는 반응형 그리드 
+    */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* 개별 상품 카드 스타일 */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* 이미지 모서리 둥글게 */
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* 이미지가 비율을 유지하며 채워지도록 */
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.product-card .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 1rem;
+}
+
+.product-card button {
+    background-color: #45a049; /* 초록색 버튼 */
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.product-card button:hover {
+    background-color: #367c39;
+}
+
+/* 장바구니 섹션 스타일 */
+.cart-section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+#cart-items li {
+    list-style: none;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-section .total {
+    text-align: right;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    background-color: #333;
+    color: white;
+}
