@@ -126,3 +126,78 @@ footer {
     background-color: #333;
     color: white;
 }
+
+/* ==================================
+  [ ⬇️ 이 코드를 style.css 맨 끝에 추가 ⬇️ ]
+================================== 
+*/
+
+/* 1. 장바구니 '주문하기' 버튼 스타일 (index.html) */
+.checkout-button {
+    display: block; /* <a> 태그를 블록 요소로 만듦 */
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #ff6347; /* 헤더와 동일한 토마토 색상 */
+    color: white;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.checkout-button:hover {
+    background-color: #e55a40;
+}
+
+
+/* 2. 주문서 폼 스타일 (checkout.html) */
+.order-form {
+    max-width: 600px;
+    margin: 0 auto; /* 폼을 가운데 정렬 */
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block; /* 라벨이 한 줄을 다 차지하도록 */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* 주문 완료 버튼 스타일 */
+.submit-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #45a049; /* 장바구니 버튼과 동일한 초록색 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #367c39;
+}
