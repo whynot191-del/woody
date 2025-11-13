@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const products = [
         { id: 1, name: '한우 모둠 구이', price: 85000, image: 'images/한우모둠.jpg' },
         { id: 2, name: '특선 초밥 세트', price: 22000, image: 'images/초밥.jpg' },
-        { id: 3, name: '모둠 곱창 구이', price: 25000, image: 'images/곱창모둠.jpg' },
+        { id: 3, name: '모둠 곱창 구이', price: 45000, image: 'images/곱창모둠.jpg' },
         { id: 4, name: '치즈 라볶이', price: 7000, image: 'images/라볶이.jpg' },
         { id: 5, name: '미나리 삼겹살', price: 14000, image: 'images/삼겹미나리.jpg' },
         { id: 6, name: '부채살 스테이크', price: 28000, image: 'images/부채살스테이크.jpg' },
-        { id: 7, name: '방어/숭어 회', price: 30000, image: 'images/방어숭어회.jpg' },
-        { id: 8, name: '양갈비 (숄더랙)', price: 29000, image: 'images/숄더렉.jpg' },
+        { id: 7, name: '방어/숭어 회', price: 45000, image: 'images/방어숭어회.jpg' },
+        { id: 8, name: '양갈비 (숄더랙)', price: 32000, image: 'images/숄더렉.jpg' },
         { id: 9, name: '트러플 한우 짜장면', price: 18000, image: 'images/트러플자장면.jpg' },
         { id: 10, name: '비빔 만두', price: 8000, image: 'images/비빔만두.jpg' }
     ];
